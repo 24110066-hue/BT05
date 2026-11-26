@@ -1,0 +1,6 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@ include file="../includes/tags.jspf" %><c:set var="pageTitle" value="Tổng quan"/><%@ include file="../includes/header.jspf" %>
+<section class="page-heading"><div><div class="eyebrow">ADMIN WORKSPACE</div><h1>Tổng quan quản trị</h1><p class="muted">Theo dõi và quản lý dữ liệu của hệ thống.</p></div><span class="badge purple">ADMIN</span></section>
+<div class="stats"><article class="card stat"><span>Danh mục</span><strong><c:out value="${categoryCount}"/></strong><a href="<c:url value='/admin/categories'/>">Quản lý Category →</a></article><article class="card stat"><span>Tài khoản</span><strong><c:out value="${userCount}"/></strong><a href="<c:url value='/admin/users'/>">Quản lý User →</a></article><article class="card stat"><span>Quản trị viên</span><strong><c:out value="${adminCount}"/></strong><span class="muted">Tài khoản có vai trò ADMIN</span></article></div>
+<div class="card"><h2>Bắt đầu quản lý</h2><p class="muted">Thêm mới, xem danh sách, chỉnh sửa và xóa dữ liệu. Dùng ô tìm kiếm và bộ chọn số dòng để tra cứu nhanh.</p><div class="actions"><a class="btn primary" href="<c:url value='/admin/categories/new'/>">+ Thêm danh mục</a><a class="btn secondary" href="<c:url value='/admin/users/new'/>">+ Thêm tài khoản</a></div></div>
+<%@ include file="../includes/footer.jspf" %>
